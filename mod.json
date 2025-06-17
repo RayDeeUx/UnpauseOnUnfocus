@@ -1,11 +1,11 @@
 {
-    "geode": "4.3.1",
+    "geode": "4.4.0",
     "gd": {
         "mac": "2.2074"
     },
     "id": "raydeeux.dontpauseonunfocus",
     "name": "UnpauseOnUnfocus",
-    "version": "v1.0.2",
+    "version": "v1.0.3",
     "developer": "RayDeeUx",
     "description": "The macOS counterpart to Alphalaneous' \"Pause on Unfocus\" mod.",
     "repository": "https://github.com/RayDeeUx/UnpauseOnUnfocus",
@@ -15,6 +15,12 @@
             "description": "Toggles the mod.",
             "type": "bool",
             "default": true
+        },
+        "closeAllFLAlertLayers": {
+            "name": "Auto-Close All FLAlertLayers",
+            "description": "Toggles the mod.",
+            "type": "bool",
+            "default": false
         }
     },
     "links": {
