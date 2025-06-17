@@ -18,7 +18,7 @@
         },
         "closeAllFLAlertLayers": {
             "name": "Auto-Close All FLAlertLayers",
-            "description": "Toggles the mod.",
+            "description": "Automatically close all `FLAlertLayer`s before unpausing the game.",
             "type": "bool",
             "default": false
         }
