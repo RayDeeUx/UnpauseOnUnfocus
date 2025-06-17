@@ -14,10 +14,10 @@ class $modify(MyAppDelegate, AppDelegate) {
 	static void unpauseOnUnfocusResumeGame() {
 		if (!enabled) return;
 
-		const auto scene = CCScene::get();
+		CCScene* scene = CCScene::get();
 		if (!scene || scene->getChildrenCount() < 1) return;
 
-		const auto pauseLayer = getPauseLayer();
+		PauseLayer* pauseLayer = getPauseLayer();
 		if (!pauseLayer) return;
 
 		if (closeAllFLAlertLayers && scene->getChildren()) {
