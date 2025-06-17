@@ -13,19 +13,15 @@ class $modify(MyAppDelegate, AppDelegate) {
 	}
 	static void unpauseOnUnfocusResumeGame() {
 		if (!enabled) return;
-
 		CCScene* scene = CCScene::get();
 		if (!scene || scene->getChildrenCount() < 1) return;
-
 		PauseLayer* pauseLayer = getPauseLayer();
 		if (!pauseLayer) return;
-
 		if (closeAllFLAlertLayers && scene->getChildren()) {
 			for (const auto fooBar : CCArrayExt<CCObject*>(scene->getChildren())) {
 				if (const auto isAlert = typeinfo_cast<FLAlertLayer*>(fooBar)) isAlert->removeMeAndCleanup();
 			}
 		}
-
 		return pauseLayer->onResume(nullptr);
 	}
 	void applicationWillResignActive() {
