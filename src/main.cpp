@@ -22,12 +22,12 @@ class $modify(MyAppDelegate, AppDelegate) {
 		return pauseLayer->onResume(nullptr);
 	}
 	void applicationWillResignActive() {
-		// if (getPauseLayer()) return AppDelegate::applicationWillResignActive();
+		if (getPauseLayer()) return AppDelegate::applicationWillResignActive();
 		AppDelegate::applicationWillResignActive();
 		unpauseOnUnfocusResumeGame();
 	}
 	void applicationDidEnterBackground() {
-		// if (getPauseLayer()) return AppDelegate::applicationWillResignActive();
+		if (getPauseLayer()) return AppDelegate::applicationWillResignActive();
 		AppDelegate::applicationDidEnterBackground();
 		unpauseOnUnfocusResumeGame();
 	}
