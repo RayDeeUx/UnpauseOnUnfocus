@@ -1,4 +1,6 @@
 # UnpauseOnUnfocus Changelog
+## v1.0.4
+- Port to GD 2.2081.
 ## v1.0.3
 - Added an option to auto-close all `FLAlertLayer`s before unpausing.
 - By the time you're reading this, the mod's logo should be updated as well.

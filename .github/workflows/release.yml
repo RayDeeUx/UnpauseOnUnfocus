@@ -45,7 +45,6 @@ jobs:
           # bindings-ref: "foobar"
           combine: true
           target: ${{ matrix.config.target }}
-          cli: v3.6.0
 
   package:
     name: Package builds
